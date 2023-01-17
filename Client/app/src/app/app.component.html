@@ -1,0 +1,12 @@
+<ul *ngFor="let user of users">
+  <li>{{user.name}}</li>
+</ul>
+<form #form="ngForm" (ngSubmit)="getData(form.value)">
+  <input type="text" ngModel placeholder="Enter name" name="name">
+  <br>
+  <br>
+  <input type="text" ngModel placeholder="Enter position" name="position">
+  <br>
+  <br>
+  <button>Submit</button>
+</form>
